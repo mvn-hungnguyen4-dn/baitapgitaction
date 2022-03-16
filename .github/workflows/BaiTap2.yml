@@ -1,0 +1,14 @@
+name: Bai Tap 2
+on:
+  push:
+    branches: [ BaiTap2 ]
+jobs:
+  my-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: current workking directory
+        run: pwd
+      - name: list file
+        run: ls -la
+      - name: list all env
+        run: printenv
