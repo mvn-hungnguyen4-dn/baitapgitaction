@@ -4,7 +4,9 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: date
+      - name: Name
+        run: export NAME = 'Nguyen Dang Hung'
+      - name: Date
+        run: export DATE = date
       - name: print
-        run: echo "Hello World", "Hom nay la thu:"
+        run: echo "Xin chao " $NAME, "Hom nay la thu:" $DATE
