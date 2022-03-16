@@ -1,3 +1,3 @@
-FROME busybox
+FROM busybox
 
 
