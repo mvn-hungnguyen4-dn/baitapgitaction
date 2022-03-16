@@ -8,5 +8,5 @@ jobs:
         run:  |
           export NAME="Nguyen Dang Hung"
           export H=date
-          echo "$NAME" "H"
+          echo "$NAME" "$H"
       
