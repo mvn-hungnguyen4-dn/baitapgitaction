@@ -12,3 +12,5 @@ jobs:
         run: ls -la
       - name: list all env
         run: printenv
+      - name: show version
+        run: lsb_release -a
