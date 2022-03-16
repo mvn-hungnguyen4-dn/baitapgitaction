@@ -7,4 +7,4 @@ jobs:
       - name: Name
         run: export NAME="Nguyen Dang Hung"
       - name: print
-        run: echo $NAME
+        run: echo "$NAME"
