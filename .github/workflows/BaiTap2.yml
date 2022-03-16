@@ -31,3 +31,9 @@ jobs:
           apt-cache policy docker-ce
           sudo apt install docker-ce
           sudo systemctl status docker
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Build docker images
+        run: docker build -t local < .BaiTap2/Dockerfile
+      - name: Check images
+        run: docker ps -a
