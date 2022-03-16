@@ -36,4 +36,4 @@ jobs:
       - name: Build docker images
         run:  docker build . -t busybox -f Dockerfile
       - name: Check images
-        run: docker ps -a
+        run: docker image ls
