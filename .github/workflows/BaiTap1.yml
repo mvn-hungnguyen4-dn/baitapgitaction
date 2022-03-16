@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Name
-        run: export NAME="Nguyen Dang Hung"
-      - name: print
-        run: echo "$NAME"
+        run:  |
+          export NAME="Nguyen Dang Hung"
+          echo "$NAME"
+      
