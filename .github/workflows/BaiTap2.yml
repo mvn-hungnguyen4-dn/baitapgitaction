@@ -14,3 +14,9 @@ jobs:
         run: printenv
       - name: show version
         run: lsb_release -a
+      - name: Set AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+          aws-region: eu-east-1
