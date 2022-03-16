@@ -6,4 +6,5 @@ jobs:
     steps:
       - name: my-step
         run: date
+      - name: print
         run: echo "Hello World", "Hom nay la thu:"
