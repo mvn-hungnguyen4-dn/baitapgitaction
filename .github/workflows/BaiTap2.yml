@@ -41,10 +41,10 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
       - name: Build, tag, and push image to Amazon ECR
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: lab-githubaction
-          IMAGE_TAG: ${{ github.sha }}
+ #       env:
+ #         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+ #         ECR_REPOSITORY: lab-githubaction
+ #         IMAGE_TAG: ${{ github.sha }}
         run: |
           docker tag busybox:latest public.ecr.aws/h9b4w2p2/busybox:latest
           docker push public.ecr.aws/h9b4w2p2/busybox:latest
