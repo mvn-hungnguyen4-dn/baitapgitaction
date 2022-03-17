@@ -46,5 +46,5 @@ jobs:
           ECR_REPOSITORY: lab-githubaction
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker tag busybox:latest public.ecr.aws/h9b4w2p2/busybox:latest
+          docker push public.ecr.aws/h9b4w2p2/busybox:latest
