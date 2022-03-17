@@ -50,6 +50,6 @@ jobs:
  #         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest .
  #         docker push -a $ECR_REGISTRY/$ECR_REPOSITORY
         run: |
-          docker tag 2fb6fc2d97e1 public.ecr.aws/h9b4w2p2/busybox:latest
-          docker push public.ecr.aws/h9b4w2p2/busybox:latest
+          docker tag busybox:latest public.ecr.aws/h9b4w2p2/lab-githubaction:latest
+          docker push public.ecr.aws/h9b4w2p2/lab-githubaction:latest
 
